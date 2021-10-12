@@ -1,13 +1,12 @@
 FROM node
 
-WORKDIR /usr/src/app
+WORKDIR /nest-api
 
-COPY package*.json ./
+COPY package*.json /nest-api/
 
 RUN npm install
 
-COPY . .
+COPY . /nest-api/
 
 EXPOSE 8000
-
-CMD ["nest", "dist/main"]
+CMD [ "npm", "dist/main"]
