@@ -11,7 +11,7 @@ cd nest-api
 
 créer un fichier .env
 
-renseigner dans le fichier .env le PORT d'écoute du projet & le lien d'accès à la base de données
+renseigner dans le fichier .env le PORT d'écoute du projet & le lien d'accès à la base de données DATABASE_URL
 
 PORT = 8000
 
@@ -77,7 +77,7 @@ http://localhost:8000/product/product/id_product (remplacer id_product par l'ide
 
 Ajouter un nouveau produit avec la méthode POST
 
-http://localhost:8000/product/create/id_user/ (remplacer id_user par l'id de l'auteur et id_category par l'id de la catégorie du produit qu'on souhaite créer)
+http://localhost:8000/product/create/id_user/id_category (remplacer id_user par l'id de l'auteur et id_category par l'id de la catégorie du produit qu'on souhaite créer)
 
 Mettre à jour un produit avec la méthode PUT
 
