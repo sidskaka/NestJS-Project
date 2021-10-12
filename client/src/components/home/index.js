@@ -13,7 +13,7 @@ const Home = (props) => {
    const [dataNewProduct, setDataNewProduct] = useState(data);
    const [dataProducts, setDataProducts] = useState([]);
    const [dataCategories, setDataCategories] = useState([]);
-   const userID = localStorage.getItem("token");
+   const userID = localStorage.getItem("userIdentify");
    const handleChange = e => {
       setDataNewProduct({
          ...dataNewProduct,
@@ -56,7 +56,6 @@ const Home = (props) => {
       e.preventDefault();
       axios({
          method: 'POST',
-         //url: `/product/create/123/DD`,
          url: `/product/create/${userID}/${categoryID}`,
          data: dataNewProduct
       })
