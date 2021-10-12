@@ -1,5 +1,7 @@
 # NestJS-Project
 
+# APIS: NestJS & ReactJS & MongoDB
+
 # Installation du projet (Backend & Frontend)
 git clone link_project
 
